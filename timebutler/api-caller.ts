@@ -83,7 +83,7 @@ async function callTimebutlerApi(
  */
 export const createTimebutlerApiCaller: (
   apiKey: NonNullable<string>,
-  extendedApiKey: string | null,
+  extendedApiKey?: string | null,
 ) => (
   endpoint: Endpoint | ExtendedEnpoint,
   params?: TimebutlerApiParams,
