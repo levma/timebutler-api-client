@@ -79,9 +79,16 @@ async function callTimebutlerApi(
  *
  * @param {NonNullable<string>} apiKey - The API key used for authentication.
  * @param {string | null} [extendedApiKey=null] - The extended API key used for authentication.
- * @return {Function} A bound Timebutler API caller function.
+ * @returns {Function} A bound Timebutler API caller function.
  */
-export const createTimebutlerApiCaller = (
+export const createTimebutlerApiCaller: (
+  apiKey: NonNullable<string>,
+  extendedApiKey: string | null,
+) => (
+  endpoint: Endpoint | ExtendedEnpoint,
+  params?: TimebutlerApiParams,
+  files?: Record<string, File>,
+) => Promise<string> = (
   apiKey: NonNullable<string>,
   extendedApiKey: string | null = null,
 ) => callTimebutlerApi.bind(null, apiKey, extendedApiKey);

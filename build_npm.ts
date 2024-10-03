@@ -27,7 +27,7 @@ await build({
     },
     devDependencies: {
       "@types/papaparse": "^5",
-    }
+    },
   },
   test: false,
   filterDiagnostic() {
