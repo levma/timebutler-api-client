@@ -1,0 +1,42 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CURRENCIES = exports.PAYMENT_TYPES = void 0;
+exports.PAYMENT_TYPES = [
+    "Salary",
+    "Variable remuneration",
+    "Bonus payments",
+];
+exports.CURRENCIES = [
+    "AUD",
+    "BRL",
+    "GBP",
+    "BGN",
+    "CNY",
+    "DKK",
+    "EUR",
+    "HKD",
+    "INR",
+    "IDR",
+    "ISK",
+    "ILS",
+    "JPY",
+    "CAD",
+    "HRK",
+    "MYR",
+    "MXN",
+    "NZD",
+    "NOK",
+    "PHP",
+    "PLN",
+    "RON",
+    "SEK",
+    "CHF",
+    "SGD",
+    "ZAR",
+    "KRW",
+    "THB",
+    "CZK",
+    "TRY",
+    "HUF",
+    "USD",
+];

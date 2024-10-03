@@ -1,0 +1,1 @@
+{"version":3,"file":"create-start-and-end-dates-from-api-data.d.ts","sourceRoot":"","sources":["../../src/utils/create-start-and-end-dates-from-api-data.ts"],"names":[],"mappings":"AAEA;;;;;;;;GAQG;AACH,wBAAgB,iCAAiC,CAC/C,IAAI,EAAE,MAAM,EACZ,SAAS,EAAE,MAAM,EACjB,OAAO,EAAE,MAAM,EACf,QAAQ,GAAE,MAAwB,GACjC;IAAE,SAAS,EAAE,IAAI,CAAC;IAAC,OAAO,EAAE,IAAI,CAAA;CAAE,CAgDpC"}
