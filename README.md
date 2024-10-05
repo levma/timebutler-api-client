@@ -26,10 +26,24 @@ Provide API keys in the `.env` file:
 
 ## Usage
 
+In your Node project:
+
 ```typescript
 import { absences, createTimebutlerApiCaller } from "timebutler-api-client";
 
 const apiKey = process.env.TIMEBUTLER_API_KEY;
 const caller = createTimebutlerApiCaller(apiKey!);
 const result = await absences(caller);
+```
+
+Directly inside a html page (download `client.js` from
+[Releases](https://github.com/levma/timebutler-api-client/releases)):
+
+```html
+<script src="client.js"></script>
+<script>
+  const timebutler = globalThis["TimebutlerApi"];
+  const caller = timebutler.createTimebutlerApiCaller("a-timebutler-api-key");
+  const result = await timebutler.absences(caller);
+</script>
 ```
