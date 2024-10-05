@@ -22,13 +22,8 @@ await build({
     bugs: {
       url: "https://github.com/levma/timebutler-api-client/issues",
     },
-    dependencies: {
-      "papaparse": appConfig.imports.papaparse.split("@")[1],
-    },
-    devDependencies: {
-      "@types/papaparse": "^5",
-    },
   },
+  importMap: "./deno.json",
   test: false,
   filterDiagnostic() {
     return false;
