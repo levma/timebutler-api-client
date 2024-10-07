@@ -12,11 +12,10 @@ import type { TimebutlerApiCaller, TimebutlerApiParams } from "./api-caller.ts";
  */
 export function rawSalaries(
   caller: TimebutlerApiCaller,
-  param:
+  param?:
     | { email: string }
     | { employeeNumber: string }
-    | { userId: number }
-    | undefined,
+    | { userId: number },
 ): Promise<string> {
   const params: TimebutlerApiParams | undefined = param;
   return caller("salaries", params);
@@ -32,11 +31,10 @@ export function rawSalaries(
  */
 export async function salaries(
   caller: TimebutlerApiCaller,
-  param:
+  param?:
     | { email: string }
     | { employeeNumber: string }
-    | { userId: number }
-    | undefined,
+    | { userId: number },
   timeZone: string = "Europe/Berlin",
 ): Promise<unknown> {
   return parseCsv<CsvSalary, Salary>(
