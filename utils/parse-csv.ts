@@ -1,4 +1,4 @@
-import { parse } from "@std/csv";
+import { parse } from "jsr:@std/csv";
 
 /**
  * Parse a CSV string into an array of objects
