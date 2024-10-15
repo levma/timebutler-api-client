@@ -1,4 +1,4 @@
-import { parse } from "https://deno.land/std@0.224.0/csv/parse.ts";
+import { parse } from "@std/csv";
 
 /**
  * Parse a CSV string into an array of objects
