@@ -36,7 +36,7 @@ export async function salaries(
     | { employeeNumber: string }
     | { userId: number },
   timeZone: string = "Europe/Berlin",
-): Promise<unknown> {
+): Promise<Salary[]> {
   return parseCsv<CsvSalary, Salary>(
     await rawSalaries(caller, param),
     (row) => {

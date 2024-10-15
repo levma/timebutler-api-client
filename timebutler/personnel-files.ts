@@ -41,7 +41,7 @@ export async function personnelFiles(
     | { employeeNumber: string }
     | { userId: number },
   timeZone: string = "Europe/Berlin",
-): Promise<unknown> {
+): Promise<PersonnelFile[]> {
   return parseCsv<CsvPersonnelFile, PersonnelFile>(
     await rawPersonnelFiles(caller, param),
     (row) => {
